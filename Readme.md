@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainView.Wpf.xaml](./CS/View/MainView.Wpf.xaml) (VB: [MainView.Wpf.xaml](./VB/View/MainView.Wpf.xaml))
+* **[MainViewModel.Wpf.cs](./CS/ViewModel/MainViewModel.Wpf.cs) (VB: [MainViewModel.Wpf.vb](./VB/ViewModel/MainViewModel.Wpf.vb))**
+<!-- default file list end -->
 # How to: Use DelegateCommand
 
 
