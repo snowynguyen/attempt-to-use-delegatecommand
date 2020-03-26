@@ -5,14 +5,22 @@ namespace Example.ViewModel {
     public class MainViewModel : ViewModelBase {
         public DelegateCommand AutoUpdateCommand { get; private set; }
         public bool IsAutoUpdateCommandEnabled {
-            get { return GetProperty(() => IsAutoUpdateCommandEnabled); }
-            set { SetProperty(() => IsAutoUpdateCommandEnabled, value); }
+            //get { return GetProperty(() => IsAutoUpdateCommandEnabled); }
+            //set { SetProperty(() => IsAutoUpdateCommandEnabled, value); }
+            get;
+            set;
         }
         void AutoUpdateCommandExecute() {
             MessageBox.Show("Hello");
         }
         bool AutoUpdateCommandCanExecute() {
             return IsAutoUpdateCommandEnabled;
+        }
+
+        public string myString
+        {
+            get { return GetProperty( () => myString ); }
+            set { SetProperty( () => myString, value ); }
         }
 
         public DelegateCommand ManualUpdateCommand { get; private set; }
